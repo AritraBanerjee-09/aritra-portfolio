@@ -256,7 +256,7 @@ export default function App() {
       title: 'Vendor Performance Analysis (PowerBI)',
       category: 'analytics',
       tech: ['Power BI', 'DAX', 'Data Modeling', 'Supply Chain Analytics'],
-      image: '/assets/project_sales.jpg',
+      image: '/assets/project_vendor.jpg',
       summary: 'BI dashboard evaluating vendor delivery timelines, defect rates, and cost efficiencies for enterprise purchasing.',
       highlights: [
         'Constructed star-schema data models to correlate supplier metrics',
