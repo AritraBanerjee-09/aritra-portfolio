@@ -64,22 +64,6 @@ export default function App() {
   // Interactive Chart Sandbox State
   const [chartType, setChartType] = useState('sales');
 
-  // Dynamic Typewriter Effect for Roles
-  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
-  const roles = [
-    'Fresher Data Analyst',
-    'Business Intelligence Pro (Power BI)',
-    'Machine Learning Practitioner',
-    'SAP ABAP Developer'
-  ];
-  
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
-
   // Canvas Constellation Animation Background
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -525,14 +509,6 @@ export default function App() {
                 Aspiring <br />
                 <span className="text-gradient">Data Analyst & BI Specialist</span>
               </h1>
-
-              <div className="h-8 font-mono text-lg text-cyan-300 flex items-center gap-2">
-                <Terminal className="w-5 h-5 text-cyan-400" />
-                <span>I am a </span>
-                <span className="underline decoration-cyan-500 decoration-2 underline-offset-4 font-semibold">
-                  {roles[currentRoleIndex]}
-                </span>
-              </div>
 
               <p className="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">
                 I am a passionate <strong className="text-white">Fresher</strong> actively looking for full-time opportunities in <strong className="text-cyan-300">Data Analytics, Business Intelligence, Machine Learning</strong>, and <strong className="text-cyan-300">SAP ABAP Development</strong>. Proficient in Python, SQL, Power BI, DAX, Scikit-learn, and enterprise process automation.
